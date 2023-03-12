@@ -1,0 +1,110 @@
+html{
+    scroll-behavior: smooth;
+}
+section{
+    background: url(wallpapersden.com_cool-4k-pattern_3840x2160.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+}
+.sidebar{
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color:  gray;
+    margin-left: -250px;
+    transition: all .5s ease;
+}
+.sidebar header{
+    font-size: 30px;
+    text-align: center;
+    line-height: 70px;
+    background-color: #222;
+    color: white;
+    user-select: none;
+    transition: .4s;
+}
+.sidebar header:hover{
+    font-size: 35px;
+}
+.sidebar ul {
+    text-align: center;
+    display: block;
+    line-height: 50px;
+    font-size: 20px;
+    padding-left: 0px;
+    box-sizing: border-box;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    list-style-type: none;
+}
+.sidebar ul a{
+    display: block;
+    border-top: 3px solid white;
+    transition: .4s;
+}
+li:nth-child(odd) {
+    background-color: lightgray;
+}
+.sidebar ul a:hover{
+    background-color: transparent;
+    text-decoration: underline;
+    font-size: 35px;
+    padding: 10px;
+}
+.sidebar ul a:link{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+.sidebar ul a:visited{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+label #btn, label #cancel{
+    position: absolute ;
+    cursor: pointer;
+}
+#checksb{
+    display: none;
+}
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 40px;
+    padding: 6px 12px;
+    transition: .4s;
+    color: white;
+    transition: all .5s ease;
+}
+label #btn:hover{
+    font-size: 45px;
+}
+label #cancel{
+    z-index: 1111;
+    left: -220px;
+    top: 17px;
+    color: white;
+    font-size: 17px;
+    transition: all .5s ease;
+}
+label #cancel:hover{
+    font-size: 22px;
+}
+#checksb:checked ~ .sidebar{
+    margin-left: 0px;
+}
+#checksb:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#checksb:checked ~ label #cancel{
+    left: 220px;
+}
+#checksb:checked ~ section{
+    margin-left: 250px;
+}
