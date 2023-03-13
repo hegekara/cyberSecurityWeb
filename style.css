@@ -1,6 +1,12 @@
+*{
+    box-sizing: border-box;
+}
 html{
     scroll-behavior: smooth;
 }
+
+
+/*section*/
 section{
     background: url(Contents/wallpapersden.com_cool-4k-pattern_3840x2160.jpg) no-repeat;
     background-position: center;
@@ -8,20 +14,25 @@ section{
     height: 100vh;
     transition: all .5s;
 }
+
+
+/*sidebar*/
 .sidebar{
     position: fixed;
     left: 0;
     width: 250px;
     height: 100%;
-    background-color:  gray;
+    background-color:  black;
     margin-left: -250px;
     transition: all .5s ease;
 }
+
+/*sidebar-header*/
 .sidebar header{
     font-size: 30px;
     text-align: center;
     line-height: 70px;
-    background-color: #222;
+    background-color: grey;
     color: white;
     user-select: none;
     transition: .4s;
@@ -29,6 +40,8 @@ section{
 .sidebar header:hover{
     font-size: 35px;
 }
+
+/*sidebar-ul*/
 .sidebar ul {
     text-align: center;
     display: block;
@@ -43,27 +56,27 @@ section{
 .sidebar ul a{
     display: block;
     border-top: 3px solid white;
-    transition: .4s;
-}
-li:nth-child(odd) {
-    background-color: lightgray;
+    transition: .4s;    
 }
 .sidebar ul a:hover{
-    background-color: transparent;
-    text-decoration: underline;
-    font-size: 35px;
-    padding: 10px;
+    font-size: 30px;
+    padding: 10px;  
+}
+.sidebar li:nth-child(odd) {
+    background-color: #222;
 }
 .sidebar ul a:link{
-    color: black;
+    color: white;
     background-color: transparent;
     text-decoration: none;
 }
 .sidebar ul a:visited{
-    color: black;
+    color: white;
     background-color: transparent;
     text-decoration: none;
 }
+
+/*checkbox*/
 label #btn, label #cancel{
     position: absolute ;
     cursor: pointer;
@@ -73,7 +86,7 @@ label #btn, label #cancel{
 }
 label #btn{
     left: 40px;
-    top: 25px;
+    top: 22px;
     font-size: 40px;
     padding: 6px 12px;
     transition: .4s;
@@ -89,6 +102,7 @@ label #cancel{
     top: 17px;
     color: white;
     font-size: 17px;
+    position: fixed;
     transition: all .5s ease;
 }
 label #cancel:hover{
@@ -107,4 +121,132 @@ label #cancel:hover{
 }
 #checksb:checked ~ section{
     margin-left: 250px;
+}
+
+
+
+
+
+
+
+
+
+/*NAVBAR*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+/*navbar-header*/
+.navbar header{
+    font-size: 25px;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+    user-select: none;
+    transition: .4s;
+    margin-left: 100px;
+    transition: all .5s ease;
+}
+.navbar header:hover{
+    font-size: 26px;
+
+}
+
+/*navbar-links*/
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    line-height: 40px;
+    margin-right: 40px;
+}
+.navbar-links li{
+    list-style: none;
+}
+.navbar-links li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    transition: all .5s ease;
+}
+.navbar ul li:hover{
+    background-color: #222;
+}
+.navbar ul a:hover{
+    background-color: #222;
+    text-decoration: underline;
+    font-size: 18px;
+}
+.navbar ul a:link{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+.navbar ul a:visited{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/*checknb*/
+#checknb{
+    display: none;
+}
+label #nav-a, label #nav-d{
+    position: absolute ;
+    cursor: pointer;
+}
+label #nav-a{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    right: 40px;
+    top: 22px;
+    font-size: 40px;
+    padding: 6px 12px;
+    transition: .4s;
+    color: white;
+    transition: all .5s ease;
+}
+label #nav-d{
+    z-index: 1111;
+    right: 20px;
+    top: 17px;
+    color: white;
+    font-size: 17px;
+    position: fixed;
+    transition: all .5s ease;
+}
+
+@media(max-width:900px) {
+    label #nav-a{
+        display:flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+}
+#checknb:checked ~ .navbar{
+    display: flex;
 }
