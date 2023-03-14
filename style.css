@@ -16,7 +16,11 @@ section{
 }
 
 
-/*sidebar*/
+
+
+
+/*SIDEBAR*/
+
 .sidebar{
     position: fixed;
     left: 0;
@@ -153,7 +157,6 @@ label #cancel:hover{
 }
 .navbar header:hover{
     font-size: 26px;
-
 }
 
 /*navbar-links*/
@@ -173,6 +176,7 @@ label #cancel:hover{
     padding: 1rem;
     text-align: center;
     transition: all .5s ease;
+    gap: 2rem;
 }
 .navbar ul li:hover{
     background-color: #222;
@@ -192,61 +196,43 @@ label #cancel:hover{
     background-color: transparent;
     text-decoration: none;
 }
-
-/*checknb*/
-#checknb{
-    display: none;
-}
-label #nav-a, label #nav-d{
+.navbar .nav-btn{
     position: absolute ;
     cursor: pointer;
-}
-label #nav-a{
-    position: absolute;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    right: 40px;
-    top: 22px;
+    right: 30px;
+    top: 20px;
     font-size: 40px;
     padding: 6px 12px;
     transition: .4s;
     color: white;
     transition: all .5s ease;
+    display: none;
 }
-label #nav-d{
-    z-index: 1111;
-    right: 20px;
-    top: 17px;
-    color: white;
-    font-size: 17px;
-    position: fixed;
-    transition: all .5s ease;
-}
-
-@media(max-width:900px) {
-    label #nav-a{
-        display:flex;
-    }
+@media(max-width:992px){
     .navbar-links{
         display: none;
-        width: 100%;
     }
-    .navbar{
-        flex-direction: column;
-        align-items: flex-start;
+    .navbar .nav-btn{
+        display:block;
     }
-    .navbar-links ul{
-        width: 100%;
-        flex-direction: column;
+    .navbar .dropdown_menu{
+        display: block;
     }
-    .navbar-links li{
-        text-align: center;
-    }
-    .navbar-links li a{
-        padding: .5rem 1rem;
-    }
+
 }
-#checknb:checked ~ .navbar{
+.dropdown_menu{
+    position: absolute;
+    right: 2rem;
+    top: 80px;
+    background-color: black;
+    line-height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    display: none;
+    transition: .5s ease;
+}
+.dropdown_menu li{
+    padding: 10px;
     display: flex;
+    align-items: center;
 }
