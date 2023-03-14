@@ -6,7 +6,8 @@ html{
 }
 
 
-/*section*/
+/*SECTION*/
+
 section{
     background: url(Contents/wallpapersden.com_cool-4k-pattern_3840x2160.jpg) no-repeat;
     background-position: center;
@@ -14,6 +15,8 @@ section{
     height: 100vh;
     transition: all .5s;
 }
+
+
 
 
 
@@ -208,21 +211,35 @@ label #cancel:hover{
     transition: all .5s ease;
     display: none;
 }
-@media(max-width:992px){
+.navbar .nav-btn:hover{
+    font-size: 45px;
+}
+.navbar .nav-btn:hover ~ .dropdown_menu{
+    display: block;
+    position: absolute;
+}
+.navbar .nav-btn:hover ~ .dropdown_menu ul{
+    display: block;
+}
+.navbar .nav-btn:hover ~ .dropdown_menu ul li{
+    display: block;
+}
+.navbar .nav-btn:hover ~ .dropdown_menu ul li a{
+    display: block;
+}
+
+@media(max-width:680px){
     .navbar-links{
         display: none;
     }
     .navbar .nav-btn{
         display:block;
     }
-    .navbar .dropdown_menu{
-        display: block;
-    }
-
 }
 .dropdown_menu{
+    box-sizing: border-box;
     position: absolute;
-    right: 2rem;
+    right: 1rem;
     top: 80px;
     background-color: black;
     line-height: 30px;
@@ -230,9 +247,21 @@ label #cancel:hover{
     border-radius: 10px;
     display: none;
     transition: .5s ease;
+    z-index: 999;
+}
+.dropdown_menu ul{
+    margin: 30px;
+    padding: 0;
 }
 .dropdown_menu li{
     padding: 10px;
     display: flex;
     align-items: center;
+    list-style: none;
+}
+.dropdown_menu li a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: all .5s ease;
 }
