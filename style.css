@@ -199,6 +199,8 @@ label #cancel:hover{
     background-color: transparent;
     text-decoration: none;
 }
+
+/*navbar-button*/
 .navbar .nav-btn{
     position: absolute ;
     cursor: pointer;
@@ -211,6 +213,8 @@ label #cancel:hover{
     transition: all .5s ease;
     display: none;
 }
+
+/*navbar-button hover*/
 .navbar .nav-btn:hover{
     font-size: 45px;
 }
@@ -228,6 +232,7 @@ label #cancel:hover{
     display: block;
 }
 
+/*navbar-width-set*/
 @media(max-width:680px){
     .navbar-links{
         display: none;
@@ -236,6 +241,8 @@ label #cancel:hover{
         display:block;
     }
 }
+
+/*navbar-dropdown-menu*/
 .dropdown_menu{
     box-sizing: border-box;
     position: absolute;
