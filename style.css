@@ -223,7 +223,7 @@ label #cancel:hover{
 }
 @media(max-width:640px){
     .navbar header{
-        display: none;
+        margin-top: -80px;
     }
 }
 
