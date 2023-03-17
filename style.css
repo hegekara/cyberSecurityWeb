@@ -249,7 +249,7 @@ label #cancel:hover{
     line-height: 50px;
     box-sizing: border-box;
     border-radius: 10px;
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.8);
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.8);
     list-style-type: none;
     z-index: 1;
     font-size: 15px;
