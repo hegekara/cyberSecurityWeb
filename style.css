@@ -168,10 +168,11 @@ label #cancel:hover{
     padding: 0;
     display: flex;
     line-height: 40px;
-    margin-right: 40px;
+    margin-right: 200px;
 }
 .navbar-links li{
     list-style: none;
+    margin-right: 10px;
 }
 .navbar-links li a{
     text-decoration: none;
@@ -181,31 +182,31 @@ label #cancel:hover{
     transition: all .5s ease;
     gap: 2rem;
 }
-.navbar ul li:hover{
+.navbar-links ul li:hover{
     background-color: #222;
 }
-.navbar ul a:hover{
+.navbar-links ul a:hover{
     background-color: #222;
     text-decoration: underline;
     font-size: 18px;
 }
-.navbar ul a:link{
+.navbar-links ul a:link{
     color: white;
     background-color: transparent;
     text-decoration: none;
 }
-.navbar ul a:visited{
+.navbar-links ul a:visited{
     color: white;
     background-color: transparent;
     text-decoration: none;
 }
 
 /*navbar-button*/
-.navbar .nav-btn{
+.navbar .dropdown_menu .nav-btn{
     position: absolute ;
     cursor: pointer;
     right: 30px;
-    top: 20px;
+    top: 13px;
     font-size: 40px;
     padding: 6px 12px;
     transition: .4s;
@@ -214,61 +215,78 @@ label #cancel:hover{
     display: none;
 }
 
-/*navbar-button hover*/
-.navbar .nav-btn:hover{
-    font-size: 45px;
-}
-.navbar .nav-btn:hover ~ .dropdown_menu{
-    display: block;
-    position: absolute;
-}
-.navbar .nav-btn:hover ~ .dropdown_menu ul{
-    display: block;
-}
-.navbar .nav-btn:hover ~ .dropdown_menu ul li{
-    display: block;
-}
-.navbar .nav-btn:hover ~ .dropdown_menu ul li a{
-    display: block;
-}
-
 /*navbar-width-set*/
-@media(max-width:680px){
+@media(max-width:1150px){
     .navbar-links{
         display: none;
     }
-    .navbar .nav-btn{
+    .navbar .dropdown_menu .nav-btn{
         display:block;
     }
 }
 
+/*navbar-button hover*/
+.navbar .dropdown_menu .nav-btn:hover{
+    font-size: 45px;
+}
+.navbar .dropdown_menu:hover .dropdown_menu_content{
+    display: block;
+}
+.navbar .dropdown_menu:hover .dropdown_menu_content a{
+    display: block;
+}
+
 /*navbar-dropdown-menu*/
-.dropdown_menu{
-    box-sizing: border-box;
-    position: absolute;
-    right: 1rem;
-    top: 80px;
-    background-color: black;
-    line-height: 30px;
-    width: 300px;
-    border-radius: 10px;
+.dropdown_menu_content{
     display: none;
-    transition: .5s ease;
-    z-index: 999;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    background-color: black;
+    width: 300px;
+    line-height: 50px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.8);
+    list-style-type: none;
+    z-index: 1;
+    font-size: 15px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
 }
-.dropdown_menu ul{
-    margin: 30px;
-    padding: 0;
+.dropdown_menu_content li:hover{
+    background-color: #222;
+    font-size: 17px;
 }
-.dropdown_menu li{
-    padding: 10px;
-    display: flex;
-    align-items: center;
+.dropdown_menu_content ul {
+    margin: 20px;
+    padding: 0px;
+    color: white;
+}
+.dropdown_menu_content li{
     list-style: none;
 }
-.dropdown_menu li a{
+.dropdown_menu_content li a{
     text-decoration: none;
     color: white;
-    text-align: center;
     transition: all .5s ease;
+    gap: 2rem;
+}
+.dropdown_menu_content ul li:hover{
+    background-color: #222;
+}
+.dropdown_menu_content ul a:hover{
+    background-color: #222;
+    font-size: 18px;
+}
+.dropdown_menu_content ul a:link{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+.dropdown_menu_content ul a:visited{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
 }
