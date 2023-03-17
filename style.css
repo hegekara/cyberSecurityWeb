@@ -231,6 +231,11 @@ label #cancel:hover{
         display:block;
     }
 }
+@media(max-width:640px){
+    .navbar header{
+        display: none;
+    }
+}
 
 /*navbar-button hover*/
 .navbar .dropdown_menu .nav-btn:hover{
