@@ -12,9 +12,10 @@ html{
 section{
     background: url(Contents/wallpapersden.com_cool-4k-pattern_3840x2160.jpg) no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     height: 100vh;
     transition: all .5s;
+    background-attachment : fixed;
 }
 
 
@@ -291,4 +292,28 @@ label #cancel:hover{
     color: white;
     background-color: transparent;
     text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/*CONTENT*/
+.content{
+    margin-top: 70px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+.content .title{
+    text-align: center;
+    font-size: 25px;
+    line-height: 60px;
+}
+.content .subtitle{
+    font-style: italic;
 }
