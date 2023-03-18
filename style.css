@@ -10,12 +10,10 @@ html{
 
 /*SECTION*/
 section{
-    background: url(Contents/wallpapersden.com_cool-4k-pattern_3840x2160.jpg) no-repeat;
+    background: url(Contents/wallpapersden.com_cool-4k-pattern_3840x2160.jpg);
+    background-repeat:repeat;
     background-position: center;
-    background-size:cover;
-    height: 100vh;
     transition: all .5s;
-    background-attachment : fixed;
 }
 
 
