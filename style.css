@@ -19,6 +19,23 @@ section{
 
 
 
+/*HOME*/
+.home{
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 100px;
+    background-color:rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+
+
+
 /*SIDEBAR*/
 .sidebar{
     position: fixed;
@@ -81,15 +98,24 @@ section{
 
 /*checkbox*/
 label #btn, label #cancel{
-    position: absolute ;
+    position: fixed ;
     cursor: pointer;
+}
+label #btn{
+    background-color: black;
+    padding: 0px;
+    margin-left: 0px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.8);
+    z-index: 1111;
 }
 #checksb{
     display: none;
 }
 label #btn{
     left: 40px;
-    top: 22px;
+    top: 20px;
     font-size: 40px;
     padding: 6px 12px;
     transition: .4s;
@@ -136,22 +162,24 @@ label #cancel:hover{
 
 /*NAVBAR*/
 .navbar{
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: black;
     color: white;
+    width: 100%;
 }
 
 /*navbar-header*/
 .navbar header{
     font-size: 25px;
     text-align: center;
-    line-height: 24px;
+    line-height: 20px;
     color: white;
     user-select: none;
     transition: .4s;
-    margin-left: 100px;
+    margin-left: 110px;
     transition: all .7s ease;
 }
 .navbar header:hover{
@@ -164,11 +192,19 @@ label #cancel:hover{
     padding: 0;
     display: flex;
     line-height: 40px;
-    margin-right: 200px;
+    top: 25px;
+    background-color: black;
+    background-color: black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.8);
+    font-size: 17px;
+    margin-right: 300px;
+    
 }
 .navbar-links li{
     list-style: none;
-    margin-right: 10px;
+    margin-right: 0px;
 }
 .navbar-links li a{
     text-decoration: none;
@@ -199,16 +235,20 @@ label #cancel:hover{
 
 /*navbar-button*/
 .navbar .dropdown_menu .nav-btn{
-    position: absolute ;
+    position: fixed ;
     cursor: pointer;
     right: 30px;
-    top: 13px;
+    top: 9px;
     font-size: 40px;
-    padding: 6px 12px;
+    padding:6px 15px;
     transition: .4s;
     color: white;
     transition: all .5s ease;
     display: none;
+    background-color: black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    z-index: 1111;
 }
 
 /*navbar-width-set*/
@@ -240,7 +280,7 @@ label #cancel:hover{
 /*navbar-dropdown-menu*/
 .dropdown_menu_content{
     display: none;
-    position: absolute;
+    position: fixed;
     right: 10px;
     top: 50px;
     background-color: black;
@@ -301,8 +341,8 @@ label #cancel:hover{
 
 
 /*CONTENT*/
-.content{
-    margin-top: 70px;
+.content{   
+    margin-top: 70px; 
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
