@@ -148,7 +148,7 @@ label #cancel:hover{
 #checksb:checked ~ label #cancel{
     left: 220px;
 }
-#checksb:checked ~ section{
+#checksb:checked ~ .home{
     margin-left: 250px;
 }
 
@@ -179,7 +179,7 @@ label #cancel:hover{
     color: white;
     user-select: none;
     transition: .4s;
-    margin-left: 110px;
+    margin-left: 260px;
     transition: all .7s ease;
 }
 .navbar header:hover{
@@ -199,7 +199,7 @@ label #cancel:hover{
     border-radius: 10px;
     box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.8);
     font-size: 17px;
-    margin-right: 300px;
+    margin-right: 0px;
     
 }
 .navbar-links li{
@@ -342,10 +342,13 @@ label #cancel:hover{
 
 /*CONTENT*/
 .content{   
-    margin-top: 70px; 
-    padding: 170px;
-    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 90px; 
+    padding-left: 270px;
+    padding-right: 260px;
+    background-color: rgba(0, 0, 0, 0.9);
     color: white;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 .content .title{
     text-align: center;
