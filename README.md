@@ -1,9 +1,3 @@
 # cyberSecurityWeb
-#Aaaa
-#include <stdio.h>
 
-int main(){
- printf("Hello World!"); 
-
- return 0;
-}
+This webpage contains some info about cyber security.
