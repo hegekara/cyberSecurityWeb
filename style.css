@@ -148,9 +148,6 @@ label #cancel:hover{
 #checksb:checked ~ label #cancel{
     left: 220px;
 }
-#checksb:checked ~ .home{
-    margin-left: 250px;
-}
 
 
 
@@ -345,7 +342,7 @@ label #cancel:hover{
     margin-top: 90px; 
     padding-left: 270px;
     padding-right: 260px;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     padding-bottom: 30px;
     padding-top: 30px;
