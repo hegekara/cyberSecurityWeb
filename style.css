@@ -190,7 +190,6 @@ label #cancel:hover{
     line-height: 40px;
     top: 25px;
     background-color: black;
-    background-color: black;
     box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.8);
@@ -237,7 +236,6 @@ label #cancel:hover{
     top: 9px;
     font-size: 40px;
     padding:6px 15px;
-    transition: .4s;
     color: white;
     transition: all .5s ease;
     display: none;
